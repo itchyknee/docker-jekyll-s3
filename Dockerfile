@@ -13,7 +13,7 @@ RUN echo "===> Adding epel, java, ruby, etc" && \
 
 # Add Gems
 RUN echo "===> Adding gems" && \
-    gem install jekyll s3-website 
+    gem install jekyll s3_website 
 
 # Clean up
 RUN echo "===> Cleaning up" && \
