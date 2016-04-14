@@ -13,7 +13,7 @@ RUN echo "===> Adding epel, java, ruby, etc" && \
 
 # Add Gems
 RUN echo "===> Adding gems" && \
-    gem install jekyll s3_website 
+    gem install jekyll s3_website jekyll-gist jekyll-paginate
 
 # Clean up
 RUN echo "===> Cleaning up" && \
@@ -23,5 +23,5 @@ RUN echo "===> Cleaning up" && \
 
 WORKDIR /
 
-# default command: display Ansible version
+# default command: ruby irb
 CMD [ "irb" ]
